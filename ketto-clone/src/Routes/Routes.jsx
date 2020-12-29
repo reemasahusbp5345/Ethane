@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import BrowseFundraisers from '../Pages/BrowseFundraisers'
+import Footer from '../Pages/Footer'
 import Home from '../Pages/Home'
 import HowitWorks from '../Pages/HowitWorks'
 import { Navbar } from '../Pages/Navbar'
@@ -16,6 +17,7 @@ export default function Routes() {
                <Route path="/crowdfunding" component={HowitWorks}/>
                <Route path="/new/crowdfunding" component={StartFundraisers}/>
            </Switch>
+           <Footer/>
         </div>
     )
 }
