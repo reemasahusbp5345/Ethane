@@ -1,0 +1,76 @@
+.whatweoffer_bg {
+  position: relative;
+}
+.why_ketto {
+  padding: 40px 0;
+  margin-top: 120px;
+  background: #f7f7f7;
+}
+.container {
+  max-width: 1136px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.why_ketto h2 {
+  margin-bottom: 80px;
+  font-size: 36px;
+  line-height: 45px;
+  color: #444;
+  text-align: center;
+  font-weight: 700;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.crowd1,
+.crowd2,
+.crowd3,
+.crowd4,
+.crowd5,
+.crowd6,
+.crowd7,
+.crowd8 {
+  width: 195px;
+  height: 150px;
+  margin: 0 auto;
+}
+.crowd1 {
+  background-position: 0 0;
+}
+.crowd2 {
+  background-position: -200px 0;
+}
+.crowd3 {
+  background-position: -400px 0;
+}
+.crowd4 {
+  background-position: -613px 0;
+}
+.crowd5 {
+  background-position: -813px 0;
+}
+.crowd6 {
+  background-position: 600px 0;
+}
+.crowd7 {
+  background-position: 400px 0;
+}
+.crowd8 {
+  background-position: 200px 0;
+}
+.why_ketto .text {
+  text-align: center;
+  width: 262px;
+  margin: 28px 0 50px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #444;
+  display: block;
+}
