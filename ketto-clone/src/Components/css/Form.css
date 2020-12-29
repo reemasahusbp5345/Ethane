@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Source Sans Pro, sans-serif;
+}
+.bor{
+    border:1px solid black;
+}
+@media (max-width:750px) {
+    .banner img{
+        width:450px;
+       
+   }
+    
+}
+.heading h1{
+    font-size:36px;
+    color:rgb(3,150,176);
+    font-family:Source Sans Pro, sans-serif;
+    font-weight:bold;
+    margin:35px 0;
+    line-height:45px;   
+   
+}
+@media (max-width:650px) {
+    .heading h1{
+        font-size:20px;
+        line-height:30px;
+
+    }
+}
+.form-container{
+    padding:15px;
+    background:rgb(251,251,251);
+}
+
+.form-container div{
+    padding:10px;
+}
+.carousel{
+    height:350px;
+    background:grey;
+    border-radius:5px;
+
+}
+.metrics{
+    height:130px;
+    margin-top:30px;
+    background:rgb(255, 255, 255);
+    align-items:center;
+    justify-content:center;
+}
+.form{
+    height:550px;
+}
+.metrics-box{
+   
+   
+}
+.metrics-box h2{
+    color: rgb(3, 150, 149);
+    font-size:26px;
+    font-weight:700;
+    margin:0px 0px 0px;
+    padding:0px;
+    line-height:33px;
+   
+   
+
+}
+.metrics-box-wrapper{
+
+    border-right:8px solid rgb(229,229,229);
+    
+}
+#metrics-box-wrapper{
+    border-right:none;
+}
+
+.form-howitworks div h4{
+    font-weight:700;
+    color:rgb(68,68,68);
+    font-family:Source Sans Pro, sans-serif;
+    font-size:22px;
+
+}
+.form-howitworks div span{
+    font-size:14px;
+    font-weight:400;
+    color:rgb(68, 68, 68);
+}
+.form-name {
+    color:rgb(247,120,112);
+}
+.form-btn-2{
+    display:flex;
+    margin:auto;
+    width:250px;
+    height:50px;
+    background:rgb(37,211,102);
+    color:white;
+    font-size:17px;
+}
+.form-btn-1{
+    width:250px;
+    height:50px;
+    font-size:26px;
+    font-weight:700;
+}
+
+.form-howitworks input, .form-howitworks select {
+    border:none;
+    border-radius:none;
+    border-bottom:2px solid rgb(244,67,54);
+}
+
+.demo h2{
+    font-weight:700;
+    color:rgb(68,68,68);
+    font-size:36px;
+}
+.demo p{
+    color:rgb(150,150,150);
+}
+
+.demo-video{
+    border-radius:10px;
+    width:750px;
+    height:500px;
+    margin:auto;
+   
+}
+@media(max-width:750px) {
+    .demo-video{
+        width:500px;
+        height:400px;
+    }
+}
