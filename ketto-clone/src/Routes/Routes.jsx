@@ -12,10 +12,10 @@ export default function Routes() {
         <div>
            <Navbar/> 
            <Switch>
-               <Route path="/" component={Home}/>
-               <Route path="/crowdfunding/fundraisers" component={BrowseFundraisers}/>
-               <Route path="/crowdfunding" component={HowitWorks}/>
-               <Route path="/new/crowdfunding" component={StartFundraisers}/>
+               <Route path="/" exact component={Home}/>
+               <Route path="/crowdfunding/fundraisers" exact component={BrowseFundraisers}/>
+               <Route path="/crowdfunding" exact component={HowitWorks}/>
+               <Route path="/new/crowdfunding" exact component={StartFundraisers}/>
            </Switch>
            <Footer/>
         </div>
