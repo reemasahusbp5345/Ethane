@@ -18,7 +18,7 @@ const Navbarcenter = styled.div`
     font-size: 16px;
     text-decoration: none;
     color: #455a64;
-    padding-right: 8px;
+    padding-right: 5px;
   }
   .dropdown,.dropdown-item{
       cursor:pointer;
@@ -26,7 +26,7 @@ const Navbarcenter = styled.div`
 `;
 
 const NavbarWrapper = styled.div`
-  position: fixed;
+  
   width: 100%;
   background-color:transparent;
   padding: 15px;
