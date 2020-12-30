@@ -24,7 +24,7 @@ const Footers = styled.div`
   padding-top:50px;
   position: relative;
   width: 100%;
-  margin-top: 100%;
+  
   color: white;
 align-items:left;
 justify-content:left;
