@@ -1,0 +1,14 @@
+ 
+.container{
+    width:100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0px auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+    
+}
