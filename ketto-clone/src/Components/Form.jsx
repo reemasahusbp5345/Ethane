@@ -37,27 +37,28 @@ function Form() {
                     
                   
                     </div>
-                    
+                   
                     <div className = " metrics d-flex justify-content-center">
 
                        <div className = "metrics-box"> 
                        <div className = "metrics-box-wrapper">
-                       <h2> ₹ 1100 Crs+</h2>
+                       <h3> ₹ 1100 Crs+</h3>
                         <span>RAISED</span>
                        </div>    
                        </div>
                        <div className = "metrics-box"> 
                        <div className = "metrics-box-wrapper">
-                       <h2> ₹ 1100 Crs+</h2>
-                        <span>RAISED</span>
+                       <h3> 55 Lakh+</h3>
+                        <span>DONORS</span>
                        </div>    
                        </div>
                        <div className = "metrics-box"> 
                        <div className = "metrics-box-wrapper" id="metrics-box-wrapper">
-                       <h2> ₹ 1100 Crs+</h2>
-                        <span>RAISED</span>
+                       <h3> 2 Lakh+</h3>
+                        <span>FUNDRAISERS</span>
                        </div>    
                        </div>
+                      
                        
                 </div>
                 </div>
@@ -112,7 +113,7 @@ function Form() {
             </div>
             </div>
             </div>
-
+            
             <div className = "demo">
                 <h2>How Crowdfunding Works?</h2>
                 <p>Decided to raise funds? Pat yourself on the back. Still have doubts? Watch This!</p>

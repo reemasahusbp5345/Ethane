@@ -45,28 +45,36 @@
 
 }
 .metrics{
-    height:130px;
-    margin-top:30px;
+    height:100px;
+    margin-top:10px;
     background:rgb(255, 255, 255);
     align-items:center;
-    justify-content:center;
+    justify-content:space-around;
 }
 .form{
     height:550px;
 }
 .metrics-box{
+   display:flex;
    
+   width:250px;
+   height:90px;
+   text-align:center;
    
 }
-.metrics-box h2{
+.metrics-box-wrapper{
+   
+    width:190px;
+}
+.metrics-box h3{
     color: rgb(3, 150, 149);
-    font-size:26px;
+    font-size:31px;
     font-weight:700;
-    margin:0px 0px 0px;
+    margin:0px;
     padding:0px;
-    line-height:33px;
    
-   
+    
+  
 
 }
 .metrics-box-wrapper{
