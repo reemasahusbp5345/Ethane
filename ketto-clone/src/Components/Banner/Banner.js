@@ -65,7 +65,7 @@ export default function Banner() {
             <div class={styles.button}>
               <a class={styles.donate_btn} href="/test.js">
                 <span class={styles.mat_button_wrapper}>
-                  Donate Now <i class="material-icons"> arrow_forward_ios </i>
+                  Donate Now <i class="material-icons"></i>
                 </span>
               </a>
             </div>

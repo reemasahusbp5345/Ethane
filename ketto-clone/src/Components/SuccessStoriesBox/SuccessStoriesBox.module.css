@@ -1,0 +1,75 @@
+.success_stories_box {
+  width: 1057px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  height: 380px;
+  margin: 30px !important;
+  list-style: none;
+}
+.success_stories_box .story_image img {
+  object-fit: cover;
+  width: 458px !important;
+  height: 380px !important;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  vertical-align: middle;
+  border-style: none;
+}
+.story_content {
+  padding: 40px 70px !important;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #444;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 17px;
+  line-height: 1.59;
+  color: #444;
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #01bfbd;
+  cursor: pointer;
+}
+.whatsapp_cta {
+  position: absolute;
+  right: 60px;
+  bottom: 30px;
+}
+.whatsapp_cta p {
+  font-size: 17px;
+  text-align: center;
+  color: #999;
+  line-height: 1.59;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 1rem;
+}
+
+.whatsapp_btn {
+  width: 137px;
+  border-radius: 19px;
+  display: inline-block;
+  color: #25d366;
+  font-size: 17px;
+  border: 1px solid #25d366;
+  margin-left: 15px;
+  padding: 5px 0;
+  text-decoration: none;
+  background-color: transparent;
+  text-align: center;
+}
