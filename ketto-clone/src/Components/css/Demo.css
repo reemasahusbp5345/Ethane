@@ -1,0 +1,124 @@
+.container{ 
+    margin-top:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+   
+}
+.container h2{
+    color:rgb(68,68,68);
+    font-weight: 700;
+    font-size:36px;
+   margin:50px;
+}
+.demo-container{
+    display:flex;
+    width:950px;
+   
+    margin:10px;
+    
+}
+.demo-container div{
+   
+    margin:10px;
+}
+.steps{
+    padding-right:100px;
+    
+}
+#step1{
+    margin:0px;
+}
+.steps div{
+    width:350px;
+    height:90px;
+    margin-top:130px;
+    
+
+}
+.steps div h3{
+    color:rgb(1,191,189);
+    font-size:25px;
+    text-align: start;
+    margin-bottom:18px;
+}
+
+.steps div h6{
+    color:rgb(122,122,122);
+    text-align: start;
+    font-size:17px;
+}
+.videoTag{
+    width:300px;
+}
+.buttons{
+   width:800px;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+    
+}
+.buttons button{
+    width:290px;
+    height:51px;
+    color:#fff;
+    font-size:17px;
+    line-height:21px;
+    text-align:center;
+    background:#01bfbd;
+    font-weight:700;
+    box-shadow: 0 4px 8px rgba(1,191,189,.3);
+    border-radius: 4px;
+    margin:20px;
+    border:none;
+
+}
+.buttons .buttons-btn1:hover{
+    background:#049492;
+}
+.buttons .buttons-btn2{
+    background:white;
+    color:#01bfbd;
+    border:2px solid #01bfbd;
+}
+.buttons .buttons-btn2:hover{
+    background:#01bfbd;
+    color:#fff;
+   
+}
+.chat {
+    display:flex;
+    margin:20px;
+    justify-content: center;
+    align-items: center;
+}
+.chat h5{
+    color:rgb(68, 68, 68);
+    font-weight:700;
+
+}
+.form-btn-2{
+    display:flex;
+    margin:auto;
+    width:250px;
+    height:50px;
+    background:rgb(37,211,102);
+    color:white;
+    font-size:17px;
+    border:none;
+    border-radius:5px;
+    align-items:center;
+    justify-content:center;
+    margin-left:50px;
+}
+.form-btn-2 div{
+    margin:5px;
+}
+
+.start-btn{
+   
+    margin:auto;
+    margin-top:30px;
+}
