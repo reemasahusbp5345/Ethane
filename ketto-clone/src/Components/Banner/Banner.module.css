@@ -1,0 +1,164 @@
+.banner_section {
+  position: relative;
+}
+.banner_img {
+  height: 505px;
+  object-fit: cover;
+}
+.banner_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.title_section {
+  position: absolute;
+  width: 509px;
+  right: 165px;
+  top: 95px;
+}
+.raised_wrapper {
+  margin-bottom: 40px;
+  display: flex;
+}
+.inline_div {
+  margin-right: 20px;
+  font-size: 17px;
+  color: #039695;
+}
+.inline_div h3 {
+  font-size: 26px;
+  line-height: 33px;
+  color: #039695;
+}
+.inline_div span {
+  font-size: 17px;
+  display: block;
+  font-weight: 700;
+  line-height: 20px;
+  color: #999;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+.platform_fee {
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: #039695;
+}
+.platform_fee span {
+  font-weight: 700;
+}
+.platform_fee .font_s {
+  font-size: 40px;
+}
+.start_fundraiser_btn {
+  width: 290px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 30px;
+  background: #01bfbd;
+  box-shadow: 0 4px 8px rgba(1, 191, 189, 0.3);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  max-width: 100%;
+}
+.urgent_card {
+  width: 730px;
+  height: 198px;
+  display: flex;
+  position: absolute;
+  bottom: -150px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9;
+  background: #fff;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 21px 20px;
+}
+
+.urgent_card img {
+  width: 250px;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+  vertical-align: middle;
+  border-style: none;
+}
+.content_area {
+  position: relative;
+  width: 100%;
+}
+.urgent_card .content_area p {
+  font-size: 17px;
+  line-height: 27px;
+  color: #999;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.ribbon_bg {
+  background: linear-gradient(270deg, #3023ae 0, #846dd7 100%);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+  width: 125px;
+  height: 25px;
+  text-align: center;
+  border-radius: 20px;
+}
+.urgent_card .content_area .button {
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  text-transform: uppercase;
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+.urgent_card .content_area .donate_btn {
+  position: relative;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  color: #01bfbd;
+  box-shadow: none;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0;
+  min-width: 64px;
+  padding: 0 16px;
+  border-radius: 4px;
+  overflow: visible;
+  transform: translate3d(0, 0, 0);
+  transition: background 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
