@@ -1,6 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import { BrowserRouter } from 'react-router-dom';
+import DataContextProvider from './Context/DataContextProvider';
+
+ReactDOM.render(
+  <BrowserRouter>
+  <DataContextProvider>
+    <App />
+  </DataContextProvider>
+  </BrowserRouter>,
+  document.getElementById('root')
+);
+
