@@ -4,13 +4,15 @@ import Form from './Components/Form'
 import Demo from './Components/Demo'
 import Carousel from './Components/Carousel'
 import Features from './Components/Features'
+import FAQ from './Components/FAQ'
 function App() {
   return (
   <div className = "text-center">
-  {/* <Form/>
+  <Form/>
   <Demo/>
-  <Carousel/> */}
+  <Carousel/>
   <Features/>
+  <FAQ/>
   </div>
   )
 }

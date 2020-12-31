@@ -11,8 +11,7 @@
     .banner img{
         width:450px;
        
-   }
-    
+   }    
 }
 .heading h1{
     font-size:36px;
@@ -20,8 +19,7 @@
     font-family:Source Sans Pro, sans-serif;
     font-weight:bold;
     margin:35px 0;
-    line-height:45px;   
-   
+    line-height:45px;      
 }
 @media (max-width:650px) {
     .heading h1{
@@ -32,17 +30,31 @@
 }
 .form-container{
     padding:15px;
-    background:rgb(251,251,251);
+    background:rgb(249,249,249);
 }
 
 .form-container div{
     padding:10px;
 }
 .carousel{
-    height:350px;
-    background:grey;
-    border-radius:5px;
+    border-radius:10px;
+}
+.carousel-item{
+   
+  
+}
 
+.carousel-item img{
+    border-radius:10px;
+    width:850px;
+    height:350px;
+}
+.carousel-caption{ 
+    margin-left:-60px; 
+}
+.carousel-caption h6{
+    font-weight:700;
+    font-size:18px;
 }
 .metrics{
     height:100px;
@@ -50,20 +62,24 @@
     background:rgb(255, 255, 255);
     align-items:center;
     justify-content:space-around;
+    margin-top:40px;
 }
 .form{
-    height:550px;
+    height:550px;    
+    background:rgb(255, 255, 255);  
+}
+.metrics{
+   background:rgb(255,255,255)
 }
 .metrics-box{
    display:flex;
-   
    width:250px;
    height:90px;
    text-align:center;
    
 }
+
 .metrics-box-wrapper{
-   
     width:190px;
 }
 .metrics-box h3{
@@ -72,18 +88,16 @@
     font-weight:700;
     margin:0px;
     padding:0px;
-   
-    
-  
-
 }
 .metrics-box-wrapper{
-
-    border-right:8px solid rgb(229,229,229);
-    
+    border-right:8px solid rgb(229,229,229);   
 }
 #metrics-box-wrapper{
     border-right:none;
+}
+.form-howitworks{
+    background:rgb(255,255,255);
+    height:580px;
 }
 
 .form-howitworks div h4{
@@ -103,18 +117,34 @@
 }
 .form-btn-2{
     display:flex;
-    margin:auto;
+    border:1px solid black;
+    margin-left:50px;
     width:250px;
     height:50px;
     background:rgb(37,211,102);
     color:white;
-    font-size:17px;
+    font-size:16px;
+    border:none;
+    border-radius:5px;
+    align-items:center;
+    justify-content:center;
+
+    
+}
+
+.form-btn2-text{
+   width:300px;
+   height:40px;
+  
+   text-align:center;
+   font-size:16px;
 }
 .form-btn-1{
     width:250px;
     height:50px;
     font-size:26px;
     font-weight:700;
+    
 }
 
 .form-howitworks input, .form-howitworks select {

@@ -1,4 +1,15 @@
 .carousel-container{
     height:600px;
-    background:grey;
+    margin-top:30px;
+    
+}
+.carousel-container h2{
+    font-size:36px;
+    color:rgb(68, 68, 68);
+    font-weight:700;
+
+}
+.carousel-container p{
+    font-size:17px;
+    color:rgb(119, 119, 119);
 }

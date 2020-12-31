@@ -28,7 +28,7 @@ function Features() {
                </div>
                </div>
 
-               <div className = "col-md-3 offset-1" >
+               <div className = "col-md-3 offset-md-1" >
 
                 <div className = "content-box">
                     <div className = "content-icons">
@@ -42,7 +42,7 @@ function Features() {
                 </div>
                 </div>
 
-                <div className = "col-md-3 offset-1" >
+                <div className = "col-md-3 offset-md-1" >
                 <div className = "content-box">
                     <div className = "content-icons">
                     <FcCustomerSupport style = {{width:"55px", height:"50px"}}/ >
@@ -69,7 +69,7 @@ function Features() {
                </div>
                </div>
 
-               <div className = "col-md-3 offset-1" >
+               <div className = "col-md-3 offset-md-1" >
 
                 <div className = "content-box">
                     <div className = "content-icons">
@@ -83,7 +83,7 @@ function Features() {
                 </div>
                 </div>
 
-                <div className = "col-md-3 offset-1" >
+                <div className = "col-md-3 offset-md-1" >
                 <div className = "content-box">
                     <div className = "content-icons">
                     <FcAdvertising style = {{width:"55px", height:"50px"}}/ >
@@ -110,7 +110,7 @@ function Features() {
                </div>
                </div>
 
-               <div className = "col-md-3 offset-1" >
+               <div className = "col-md-3 offset-md-1" >
 
                 <div className = "content-box">
                     <div className = "content-icons">
@@ -124,7 +124,7 @@ function Features() {
                 </div>
                 </div>
 
-                <div className = "col-md-3 offset-1" >
+                <div className = "col-md-3 offset-md-1" >
                 <div className = "content-box">
                     <div className = "content-icons">
                     <FaTools style = {{width:"55px", height:"50px"}}/ >

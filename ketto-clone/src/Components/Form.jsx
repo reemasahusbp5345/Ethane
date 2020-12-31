@@ -2,6 +2,7 @@ import React from 'react'
 import './css/Form.css'
 import {FaWhatsapp} from 'react-icons/fa'
 import YouTube from "react-youtube";
+import Carousel from 'react-bootstrap/Carousel'
 var getYouTubeID = require("get-youtube-id");
 
 //https://youtu.be/4uu-mKoFR6w
@@ -9,10 +10,7 @@ var getYouTubeID = require("get-youtube-id");
 
 
 function Form() {
-    
-
-
-      const opts = {
+       const opts = {
         height: "390",
         width: "640",
         playerVars: {
@@ -33,13 +31,85 @@ function Form() {
                 <div className = "row w-100">
                 <div className = " col-md-7 col-sm-12">
                    
-                    <div className = " carousel">
-                    
-                  
-                    </div>
-                   
-                    <div className = " metrics d-flex justify-content-center">
+                    <div className = "carousel-box"> 
+                    <Carousel className = "carousel">
+                
+                
+                    <Carousel.Item interval={1000} className = "carousel-item ">
+                        <img
+                        className="d-block w-100"
+                        src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image1.jpg?w=750&dpr=1.3"
+                        alt="First slide"
+                        />
+                        <Carousel.Caption className ="carousel-caption text-left">
+                        <h6 >Tulsi was able to raise Rs.2,71,939 to treat Sharmila's heart disease</h6>                   
+                        </Carousel.Caption>
+                    </Carousel.Item>
 
+                    <Carousel.Item interval={1000} className = "carousel-item ">
+                        <img
+                        className="d-block w-100"
+                        src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image2.jpg?w=750&dpr=1.3"
+                        alt="Second slide"
+                        />
+                        <Carousel.Caption className ="carousel-caption text-left">
+                        <h6 >Bhoomika was able to raise Rs.39,31,860 in 5 days to fund her liver transplant</h6>                   
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item interval={1000} className = "carousel-item ">
+                        <img
+                        className="d-block w-100"
+                        src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image3.png?w=750&dpr=1.3"
+                        alt="Third slide"
+                        />
+                        <Carousel.Caption className ="carousel-caption text-left">
+                        <h6 >Abrar's family raised Rs.4,60,852 in 3 days for heart surgery </h6>                   
+                        </Carousel.Caption>
+                    </Carousel.Item>
+
+                    <Carousel.Item interval={1000} className = "carousel-item ">
+                        <img
+                        className="d-block w-100"
+                        src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image4.png?w=750&dpr=1.3"
+                        alt="Fourth slide"
+                        />
+                        <Carousel.Caption className ="carousel-caption text-left">
+                        <h6 >Sharvan mangaed to raise Rs.1,55,72,900 to take care of 200+ injured & abondoned animals  </h6>                   
+                        </Carousel.Caption>
+                        
+                    </Carousel.Item>
+
+                    <Carousel.Item interval={1000} className = "carousel-item ">
+                        <img
+                        className="d-block w-100"
+                        src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image5.jpg?w=750&dpr=1.3"
+                        alt="Fifth slide"
+                        />
+                        <Carousel.Caption className ="carousel-caption text-left">
+                        <h6 >Mallika, a single mother was able to raise Rs.6,00,274 in 3 days to save her baby's life  </h6>                   
+                        </Carousel.Caption>
+                        
+                    </Carousel.Item>
+
+                    <Carousel.Item interval={1000} className = "carousel-item ">
+                        <img
+                        className="d-block w-100"
+                        src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image6.png?w=750&dpr=1.3"
+                        alt="Sixth slide"
+                        />
+                        <Carousel.Caption className ="carousel-caption text-left">
+                        <h6 >Ravi raised Rs.2,46,42,200 in 21 days to provide meals & medicines to abondoned parents  </h6>                   
+                        </Carousel.Caption>
+                        
+                    </Carousel.Item>
+                    </Carousel>
+
+                    
+
+                    
+
+                    </div>  
+                    <div className = " metrics d-flex justify-content-center">
                        <div className = "metrics-box"> 
                        <div className = "metrics-box-wrapper">
                        <h3> ₹ 1100 Crs+</h3>
@@ -63,9 +133,9 @@ function Form() {
                 </div>
                 </div>
                 <div className = "col-md-5 col-sm-12 form">
-                    <div className = " form-howitworks">
-                        <div>
-                            <img src = "https://ketto.gumlet.io/assets/images/how-it-works/ketto-logo.svg?w=480&dpr=1.3" alt = ""/>
+                    <div className = "form-howitworks">
+                        <div >
+                            <img src = "https://ketto.gumlet.io/assets/images/how-it-works/ketto-logo.svg?w=480&dpr=1.3" alt = "" className = "m-2"/>
                             <h4>We know you are in urgent need of funds.</h4>
                             <span>Our personal fundraiser expert is waiting to get you started!</span>
                        </div> 
@@ -94,22 +164,24 @@ function Form() {
                     <span className = "people">102 People started fundraiser in last 2 days</span>
                 </div>
                 <div>
+                <div className = "form-btns">
                 <button type="button" className="btn btn-outline-primary form-btn-1">GET A CALL</button>
                 </div>
                 <div>
                 <button type = "button" className = "form-btn-2">
-                    <div>
+                    <div className = "ml-2">
                     <FaWhatsapp/>  
                     </div>
-                   <div>
+                   <div className = "form-btn2-text text-left">
                    CONNECT ON WHATSAPP
-                   </div>
-               
+                   </div>       
                 </button>
                 </div>
              
                 </div>
 
+                </div>
+                
             </div>
             </div>
             </div>
@@ -127,4 +199,5 @@ function Form() {
         </div>
     )
 }
+
 export default Form
