@@ -100,7 +100,7 @@ const Navbar = () => {
       </NavbarLeft>
       <Navbarcenter>
         <div>
-          <Link to="/crowdfunding/fundraisers">Browse Fundraisers</Link>
+          <Link to="/fundraisers">Browse Fundraisers</Link>
         </div>
         <div className="dropdown">
           <div

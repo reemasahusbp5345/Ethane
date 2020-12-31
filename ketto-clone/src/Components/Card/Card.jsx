@@ -7,11 +7,10 @@ const Wrapper=styled.div`
 display:grid;
 grid-template-columns:33% 33% 33%;
  margin-top:100px;
- 
- 
+  height:900px;
  .card{
-      
      border:0px ;
+     height:400px;
      border-radius:10px;
      box-shadow:10px 10px  whitesmoke;
      margin:20px;
@@ -28,7 +27,8 @@ grid-template-columns:33% 33% 33%;
  }
  .title{
      color:#222;
-     font-weight:bolder;
+     font-weight:500 ;
+     font-size:15px;
  }
  .light{
      color:#777;
@@ -56,7 +56,7 @@ class Card extends Component {
         return (
             <Wrapper>
                {filterItem.length>0? filterItem  
-               .map(item=><div   key={item.id}><Link to={` ${url}/${item.id}`} style={{textDecoration:"none"}}> 
+               .map(item=><div   key={item.id}><Link to={`${url}/${item.id}`} style={{textDecoration:"none"}}> 
                <div className="card">  
                     <img src={item.url} alt={item.title} className="url"/>
                     <div className="title">{item.title}</div>
@@ -65,7 +65,7 @@ class Card extends Component {
                         <span>{item.name}</span>
                     </div>
                     <div> <span className="title"> ₹  {item.raised}</span> <span className="light">raised</span></div>
-                    <div className="progress" style={{ height:"7px "}}>
+                    <div className="progress" style={{ height:"7px",backgroundColor:"#80deea" }}>
   <div className="progress-bar bg-info" role="progressbar" style={ { width:"45%" } } aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
                     <div className="light">Last donation {item.hour} hours ago</div>

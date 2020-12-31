@@ -18,7 +18,7 @@ class DataContextProvider extends Component {
     fetchData=()=>{
         axios({
             method:"get",
-            url:"http://localhost:3004/posts",
+            url:"http://localhost:3008/posts",
         })
         .then(res=>this.setState({
             db:res.data
