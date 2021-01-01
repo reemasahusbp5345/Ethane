@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import style from "./container.module.css";
-import styled from "styled-components";
+import styled from "styled-components"
 import Category from './Category';
 import Widget from './Widget';
 
