@@ -7,7 +7,7 @@ import Widget from './Widget';
 const Wrapper=styled.div`
     .instant-search{
         display:flex;
-        
+         
     }
 `
 class Container extends Component {
