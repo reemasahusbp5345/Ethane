@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-
 import { SearchOutlined } from "@ant-design/icons";
-
-
 import Card from "../Card/Card";
 
 const WidgetWrapper = styled.div`
