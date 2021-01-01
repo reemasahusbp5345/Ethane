@@ -1,5 +1,3 @@
-
-import './App.css';
 import Routes from './Routes/Routes';
 
 
@@ -13,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

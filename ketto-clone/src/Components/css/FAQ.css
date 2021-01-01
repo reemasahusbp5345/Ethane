@@ -1,0 +1,19 @@
+.faq-component{  
+    margin:auto;
+}
+
+.accordion-component{
+   min-width:1200px;
+   text-align:left;
+   padding:25px;
+}
+.accordion-box{
+    display:flex;
+    justify-content: space-between;
+    cursor:pointer;
+    height:60px;
+}
+
+.accordion-box:hover{
+    background:rgba(135, 207, 235, 0.192);
+}
