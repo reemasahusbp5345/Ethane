@@ -20,15 +20,17 @@ const Navbarcenter = styled.div`
     color: #455a64;
     padding-right: 5px;
   }
-  .dropdown,.dropdown-item{
-      cursor:pointer;
+  .dropdown,
+  .dropdown-item {
+    cursor: pointer;
   }
 `;
 
 const NavbarWrapper = styled.div`
-  
   width: 100%;
-  background-color:transparent;
+  max-width: 1140px;
+  margin: 0 auto;
+  background-color: transparent;
   padding: 15px;
   top: 0;
   height: 75px;
@@ -37,7 +39,6 @@ const NavbarWrapper = styled.div`
 `;
 
 const NavbarLeft = styled.div`
-  margin-left: 100px;
   flex: 0.1;
   a {
     text-decoration: none;

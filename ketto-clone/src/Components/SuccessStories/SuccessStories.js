@@ -25,7 +25,7 @@ export default function SuccessStories() {
               >
                 <SuccessStoriesBox1 />
               </li>
-              <li className={styles.carousel__slide}>
+              {/* <li className={styles.carousel__slide}>
                 <SuccessStoriesBox2 />
               </li>
               <li className={styles.carousel__slide}>
@@ -33,7 +33,7 @@ export default function SuccessStories() {
               </li>
               <li className={styles.carousel__slide}>
                 <SuccessStoriesBox4 />
-              </li>
+              </li> */}
             </ul>
           </div>
           <button
