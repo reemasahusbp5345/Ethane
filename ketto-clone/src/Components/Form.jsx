@@ -3,7 +3,7 @@ import './css/Form.css'
 import {FaWhatsapp} from 'react-icons/fa'
 import YouTube from "react-youtube";
 import Carousel from 'react-bootstrap/Carousel'
-var getYouTubeID = require("get-youtube-id");
+// var getYouTubeID = require("get-youtube-id");
 
 //https://youtu.be/4uu-mKoFR6w
 //https://www.youtube.com/watch?v=4uu-mKoFR6w
