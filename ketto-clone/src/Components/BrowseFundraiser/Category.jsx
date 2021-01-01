@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import { DataContext } from '../../Context/DataContextProvider';
+import {Link} from "react-router-dom"
 
 const CategoryWrapper=styled.div`
 background: #f5f5f5;
@@ -102,7 +103,7 @@ class Category extends Component {
                      </div>
                  </div>
                  <div className="startFundraiser">
-                    <button>Start a Fundraiser</button>
+                    <button><Link to="/new" style={{textDecoration:"none",color:"white"}}> Start a Fundraiser</Link></button>
                  </div>
             </CategoryWrapper>
         );
