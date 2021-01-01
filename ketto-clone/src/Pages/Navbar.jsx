@@ -61,6 +61,7 @@ const NavbarRight = styled.div`
     text-align: left;
     margin-left: 100px;
     padding-left: 10px;
+    margin-top:0px;
   }
   .fundraiser {
     border: 2px solid #01bfbd;
@@ -76,6 +77,7 @@ const NavbarRight = styled.div`
   .chat > a {
     color: #64dd17;
     text-decoration: none;
+    
   }
   .fundraiser > a {
     color: #01bfbd;
@@ -135,7 +137,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="fundraiser">
-          <Link to="/new/crowdfunding"> Start A Fundraiser</Link>
+          <Link to="/new"> Start A Fundraiser</Link>
         </div>
         <div className="signin">Sign In</div>
       </NavbarRight>

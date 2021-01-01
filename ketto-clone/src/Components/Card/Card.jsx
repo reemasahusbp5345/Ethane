@@ -7,7 +7,7 @@ const Wrapper=styled.div`
 display:grid;
 grid-template-columns:33% 33% 33%;
  margin-top:100px;
-  height:900px;
+  
  .card{
      border:0px ;
      height:400px;
@@ -58,7 +58,7 @@ class Card extends Component {
                {filterItem.length>0? filterItem  
                .map(item=><div   key={item.id}><Link to={`${url}/${item.id}`} style={{textDecoration:"none"}}> 
                <div className="card">  
-                    <img src={item.url} alt={item.title} className="url"/>
+                    <img src={item.url} alt={item.title} className="url" width="280px" height="200px"/>
                     <div className="title">{item.title}</div>
                     <div>
                         <img src={item.avatar} className="avatar"/>

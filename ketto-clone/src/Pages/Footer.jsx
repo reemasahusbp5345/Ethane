@@ -147,7 +147,7 @@ const Footer = (props) => {
               </a>
             </div>
             <div className="followers">
-              <h2 className="mb-0">1.5M +</h2>
+              <h2 className="mb-0" style={{color:"white",marginLeft:"-10px"}}>1.5M +</h2>
               <span>Followers</span>
             </div>
             <div className="reach-out">
