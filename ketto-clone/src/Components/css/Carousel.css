@@ -1,15 +1,119 @@
-.carousel-container{
-    height:600px;
-    margin-top:30px;
+.carousel-box{
+ 
+    padding:60px;
+    background:rgb(240,240,240);
+}
+  .carousel-container{
     
-}
-.carousel-container h2{
-    font-size:36px;
-    color:rgb(68, 68, 68);
-    font-weight:700;
+  }
+  .carousel-container > h2{
+      color:rgb(68, 68, 68);
+      font-size:36px;
+      font-weight:700;
 
-}
-.carousel-container p{
-    font-size:17px;
-    color:rgb(119, 119, 119);
-}
+  }
+  .carousel-container > p{
+      color:rgb(119, 119, 119);
+  }
+
+
+    
+ 
+
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+       
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .swiper-slide{
+        
+          border-radius:10px;
+         
+
+      }
+      .wrapper{
+          width:100%;
+          height:300px;
+         
+      }
+  .top{
+      width:100%;
+      height:100px;
+     
+      display:flex;
+    
+  }
+  .photo{
+      width:90px;
+      height:80px;
+     
+     
+      margin-left:10px;
+      margin-top:10px;
+  }
+  .description{
+      margin-left:15px;
+      width:400px;
+     
+      text-align:left;
+  }
+  .description h3{
+      color:rgb(68, 68, 68);
+      font-size:26px;
+      padding:0px;
+      font-weight:700;
+      line-height:33px;
+     
+      padding-top:5px;
+  }
+  
+  .description > span{
+      color:rgb(153, 153, 153);
+      font-size:14px;  
+  }
+  .description h5 span{
+      color:rgb(1, 191, 189);
+  }
+  .down{
+      width:95%;
+      height:200px;
+      text-align:left;
+      margin-left:15px;
+
+     
+  }
+
+  .down h6{
+     
+      color:rgb(68, 68, 68);
+     
+      padding:0px;
+      font-weight:700;
+      line-height:33px;
+      
+  }
+  .down p{
+      color:
+      rgb(68, 68, 68);
+      line-height:23px;
+  }
+ 
