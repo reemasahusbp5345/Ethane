@@ -56,7 +56,7 @@ class Card extends Component {
         return (
             <Wrapper>
                {filterItem.length>0? filterItem  
-               .map(item=><div   key={item.id}><Link to={` ${url}/${item.id}`} style={{textDecoration:"none"}}> 
+               .map(item=><div   key={item.id}><Link to={`${url}/${item.id}`} style={{textDecoration:"none"}}> 
                <div className="card">  
                     <img src={item.url} alt={item.title} className="url"/>
                     <div className="title">{item.title}</div>
