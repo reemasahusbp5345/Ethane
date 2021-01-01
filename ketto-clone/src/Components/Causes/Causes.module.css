@@ -1,0 +1,182 @@
+.causes_bg {
+  position: relative;
+}
+.causes_section {
+  padding-top: 100px;
+  text-align: center !important;
+}
+.top_heading {
+  padding: 10px 0 40px;
+  text-align: center !important;
+  font-size: 17px;
+}
+.causes_section h2 {
+  padding: 0;
+  font-size: 36px !important;
+  text-align: center;
+  color: #444;
+  font-weight: 700;
+  margin: 7px 0;
+}
+.causes_section p {
+  font-size: 17px;
+  color: #777;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.container {
+  max-width: 1136px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 17px;
+}
+.cause_list_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  text-align: center !important;
+}
+.cause {
+  margin-bottom: 4px;
+  padding-right: 10px;
+  padding-left: 0;
+}
+.background_img {
+  border: none;
+}
+.cancer_cause,
+.acci_cause,
+.liver_cause,
+.heart_cause,
+.kidney_cause,
+.child_cause,
+.brain_cause,
+.lung_cause,
+.rare_cause,
+.animals_cause,
+.memorial_cause,
+.others_cause {
+  width: 182px;
+  height: 152px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 5px;
+  max-width: 179px;
+  /* max-width: 16.66666667%; */
+}
+
+.cancer_cause {
+  background-position: 0 -5px;
+}
+.acci_cause {
+  background-position: -192px -5px;
+}
+.liver_cause {
+  background-position: -386px -5px;
+}
+.heart_cause {
+  background-position: -580px -5px;
+}
+.kidney_cause {
+  background-position: -770px -5px;
+}
+.child_cause {
+  background-position: -962px -5px;
+}
+.brain_cause {
+  background-position: 1142px -5px;
+}
+.lung_cause {
+  background-position: -1346px -5px;
+}
+.rare_cause {
+  background-position: -1537px -5px;
+}
+.animals_cause {
+  background-position: -1731px -5px;
+}
+.memorial_cause {
+  background-position: -1920px -5px;
+}
+.others_cause {
+  height: 154px;
+  background: #01bfbd;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 5px;
+  max-width: 179px;
+  cursor: pointer;
+  background-image: none !important;
+}
+
+.cancer_cause span,
+.acci_cause span,
+.liver_cause span,
+.heart_cause span,
+.kidney_cause span,
+.child_cause span,
+.brain_cause span,
+.lung_cause span,
+.rare_cause span,
+.animals_cause span,
+.memorial_cause span,
+.others_cause span {
+  font-size: 17px;
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.cancer_cause span::after,
+.acci_cause span::after,
+.liver_cause span::after,
+.heart_cause span::after,
+.kidney_cause span::after,
+.child_cause span::after,
+.brain_cause span::after,
+.lung_cause span::after,
+.rare_cause span::after,
+.animals_cause span::after,
+.memorial_cause span::after,
+.others_cause span::after {
+  content: "";
+  display: block;
+  background: #fff;
+  width: 8%;
+  border-radius: 25px;
+  height: 2px;
+  margin: 0 auto;
+}
+.learn_more {
+  background: #01bfbd;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center;
+  padding: 6px;
+  color: #fff;
+  font-size: 17px;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.causes_bg svg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}

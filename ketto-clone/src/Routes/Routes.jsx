@@ -14,8 +14,8 @@ export default function Routes(props) {
            <Navbar/> 
            <Switch>
                <Route path="/" exact component={Home}/>
-               <Route path="/crowdfunding/fundraisers" exact render={(props)=><BrowseFundraisers {...props}/>}/>
-               <Route path="crowdfunding/fundraisers/:id" exact render={(props)=><CardDetails {...props}/>}/>
+               <Route path="/fundraisers" exact render={(props)=><BrowseFundraisers {...props}/>}/>
+               <Route path="/fundraisers/:id" exact render={(props)=><CardDetails {...props}/>}/>
                <Route path="/crowdfunding" exact component={HowitWorks}/>
                <Route path="/new/crowdfunding" exact component={StartFundraisers}/>
            </Switch>
