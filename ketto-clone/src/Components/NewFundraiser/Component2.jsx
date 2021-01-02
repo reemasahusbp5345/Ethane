@@ -13,12 +13,11 @@ h2{
 .cont{
     display:flex;
     flex-direction:column;
-    margin-left:-10px;
-    
+   
 }
 .flex{
     display:flex;
-    padding:10px;
+   
 }
  
 `
@@ -29,7 +28,7 @@ class Component2 extends Component {
             <Wrap>
                 <div className="flex">
                     <img width="40px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU4_TVUSugtZTrmI9JWAZ1oKOeH_WfXkfQkg&usqp=CAU"/>
-                    <h2>Fundraising Team</h2>
+                    <h4>Fundraising Team</h4>
                     </div> 
                 <hr/>
                 <div className="cont">

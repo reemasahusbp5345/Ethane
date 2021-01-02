@@ -18,7 +18,7 @@ h2{
 }
 .flex{
     display:flex;
-    padding:10px;
+     
 }
  .flex>p{
      margin:5px;
@@ -40,7 +40,7 @@ class Component3 extends Component {
             <Wrap>
                  <div className="flex">
                     <img width="40px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU4_TVUSugtZTrmI9JWAZ1oKOeH_WfXkfQkg&usqp=CAU"/>
-                    <h2>Top Donors</h2>
+                    <h4>Top Donors</h4>
                     </div> 
                 <hr/>
                 <div className="cont">

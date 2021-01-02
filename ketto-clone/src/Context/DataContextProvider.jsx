@@ -9,13 +9,25 @@ class DataContextProvider extends Component {
     this.state = {
       db: [],
       category: "all",
-      isAuth:false,
+      isAuth: false,
+      users: [],
     };
   }
   componentDidMount() {
     this.fetchData();
     this.selectedCategory("all");
+    this.userDetails();
   }
+  userDetails = () => {
+    axios({
+      method: "get",
+      url: "http://localhost:3008/users",
+    }).then((res) =>
+      this.setState({
+        users: res.data,
+      })
+    );
+  };
   fetchData = () => {
     axios({
       method: "get",
@@ -31,7 +43,6 @@ class DataContextProvider extends Component {
       category: val,
     });
   };
- 
 
   addFundraise = (payload) => {
     // console.log(payload);
@@ -40,8 +51,7 @@ class DataContextProvider extends Component {
       url: "http://localhost:3008/posts",
       data: {
         title: payload.title,
-        url:
-          payload.url,
+        url: payload.url,
         avatar:
           "https://kettocdn.gumlet.io/media/individual/2179000/2179488/image/667cf549c99f56ebdeaf260f85cb4d5fdfd719b4.jpg?dpr=1.0&q=70&w=50",
         banner:
@@ -52,24 +62,38 @@ class DataContextProvider extends Component {
         support: 157,
         dayLeft: 12,
         category_id: Number(payload.category_id),
-        desc:
-         payload.desc,
+        desc: payload.desc,
         more:
-          "https://kettocdn.gumlet.io/media/directupload/1000/1052/image/43371009c51a42f4c6220faa248b5e0538feae63.jpg?w=700&dpr=1.0"
+          "https://kettocdn.gumlet.io/media/directupload/1000/1052/image/43371009c51a42f4c6220faa248b5e0538feae63.jpg?w=700&dpr=1.0",
       },
-    })
-    .then(res=>this.fetchData());
+    }).then((res) => this.fetchData());
   };
-  handleLogin=(mobile)=>{
+  handleLogin = (mobile) => {
     this.setState({
-      isAuth:true,
-      mobile:mobile
-    })
-  }
+      isAuth: true,
+      mobile: mobile,
+    });
+  };
+  handleLogout = () => {
+    this.setState({
+      isAuth: false,
+      
+    });
+  };
   render() {
-    const { selectedCategory, addFundraise,handleLogin } = this;
-    const { db, category,isAuth } = this.state;
-    const value = { db, selectedCategory, category, addFundraise,isAuth,handleLogin };
+    const { selectedCategory, addFundraise, handleLogin,handleLogout } = this;
+    const { db, category, isAuth, mobile, users } = this.state;
+    const value = {
+      db,
+      selectedCategory,
+      category,
+      addFundraise,
+      isAuth,
+      handleLogin,
+      mobile,
+      users,
+      handleLogout
+    };
     return (
       <DataContext.Provider value={value}>
         {this.props.children}

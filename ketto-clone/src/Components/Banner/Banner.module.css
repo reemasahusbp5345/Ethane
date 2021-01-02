@@ -1,5 +1,6 @@
 .banner_section {
   position: relative;
+  margin-bottom: 150px;
 }
 .banner_img {
   height: 505px;
@@ -29,6 +30,7 @@
   font-size: 26px;
   line-height: 33px;
   color: #039695;
+  font-weight: 700;
 }
 .inline_div span {
   font-size: 17px;
@@ -48,9 +50,12 @@
 }
 .platform_fee span {
   font-weight: 700;
+  margin-right: 5px;
 }
 .platform_fee .font_s {
   font-size: 40px;
+  margin-left: 5px;
+  margin-right: 0px;
 }
 .start_fundraiser_btn {
   width: 290px;

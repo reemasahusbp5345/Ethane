@@ -53,7 +53,7 @@ export default function Banner() {
       <div className={styles.urgent_wrapper}>
         <div className={styles.urgent_card}>
           <div>
-            <img src="images/urgent_card_img.jpg" alt="" />
+            <img src="images/urgent_card_img.jpg" alt="urgent image" />
           </div>
           <div class={styles.content_area}>
             <div class={styles.ribbon_bg}> featured fundraiser </div>

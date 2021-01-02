@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { SearchOutlined, WhatsAppOutlined } from "@ant-design/icons";
+import { DataContext } from "../Context/DataContextProvider";
 
 const Navbarcenter = styled.div`
   padding-top: 10px;
@@ -20,15 +21,15 @@ const Navbarcenter = styled.div`
     color: #455a64;
     padding-right: 5px;
   }
-  .dropdown,.dropdown-item{
-      cursor:pointer;
+  .dropdown,
+  .dropdown-item {
+    cursor: pointer;
   }
 `;
 
 const NavbarWrapper = styled.div`
-  
   width: 100%;
-  background-color:transparent;
+  background-color: transparent;
   padding: 15px;
   top: 0;
   height: 75px;
@@ -61,7 +62,7 @@ const NavbarRight = styled.div`
     text-align: left;
     margin-left: 100px;
     padding-left: 10px;
-    margin-top:0px;
+    margin-top: 0px;
   }
   .fundraiser {
     border: 2px solid #01bfbd;
@@ -77,7 +78,6 @@ const NavbarRight = styled.div`
   .chat > a {
     color: #64dd17;
     text-decoration: none;
-    
   }
   .fundraiser > a {
     color: #01bfbd;
@@ -86,63 +86,99 @@ const NavbarRight = styled.div`
   .signin {
     cursor: pointer;
   }
+  .loginUser > img {
+    height: 30px;
+    border-radius: 30px;
+    width: 30px;
+    margin-left: 30px;
+  }
 `;
 
-const Navbar = () => {
-  return (
-    <NavbarWrapper className="wrapper">
-      <NavbarLeft>
-        <Link to="/">
-          <img
-            src="https://kettocdn.gumlet.io/images/logo-light-bg.svg?w=80&dpr=1.0"
-            alt="ketto-logo"
-            width="70px"
-          />
-        </Link>
-      </NavbarLeft>
-      <Navbarcenter>
-        <div>
-          <Link to="/fundraisers">Browse Fundraisers</Link>
-        </div>
-        <div className="dropdown">
-          <div
-            className="dropdown-toggle"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Fundraise For
-          </div>
-          <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <p className="dropdown-item">Medical Treatment</p>
-            <p className="dropdown-item">NGO / Charity</p>
-            <p className="dropdown-item">Other Cause</p>
-          </div>
-        </div>
-        <div>
-          <Link to="/crowdfunding">How It Works</Link>
-        </div>
-        <div className="bar"></div>
-        <div>
-          <SearchOutlined style={{ fontSize: "25px", color: "#455a64" }} />
-          Search
-        </div>
-      </Navbarcenter>
-      <NavbarRight>
-        <div className="chat">
-          <a href="https://api.whatsapp.com/send?phone=917700975559">
-            <WhatsAppOutlined style={{ fontSize: "20px", color: "#64dd17" }} />
-            Chat
-          </a>
-        </div>
-        <div className="fundraiser">
-          <Link to="/new"> Start A Fundraiser</Link>
-        </div>
-        <div className="signin"><Link to="/login"> Sign In</Link></div>
-      </NavbarRight>
-    </NavbarWrapper>
-  );
-};
+class Navbar extends React.Component {
+  handleLogout = () => {
+    const { handleLogout } = this.context;
+    handleLogout();
+  };
+  render() {
+    const { users, mobile, isAuth } = this.context;
+    const loggedUser = users.find((item) => item.mobile === Number(mobile));
 
+    return (
+      <NavbarWrapper className="wrapper">
+        <NavbarLeft>
+          <Link to="/">
+            <img
+              src="https://kettocdn.gumlet.io/images/logo-light-bg.svg?w=80&dpr=1.0"
+              alt="ketto-logo"
+              width="70px"
+            />
+          </Link>
+        </NavbarLeft>
+        <Navbarcenter>
+          <div>
+            <Link to="/fundraisers">Browse Fundraisers</Link>
+          </div>
+          <div className="dropdown">
+            <div
+              className="dropdown-toggle"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Fundraise For
+            </div>
+            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <p className="dropdown-item">Medical Treatment</p>
+              <p className="dropdown-item">NGO / Charity</p>
+              <p className="dropdown-item">Other Cause</p>
+            </div>
+          </div>
+          <div>
+            <Link to="/crowdfunding">How It Works</Link>
+          </div>
+          <div className="bar"></div>
+          <div>
+            <SearchOutlined style={{ fontSize: "25px", color: "#455a64" }} />
+            Search
+          </div>
+        </Navbarcenter>
+        <NavbarRight>
+          <div className="chat">
+            <a href="https://api.whatsapp.com/send?phone=917700975559">
+              <WhatsAppOutlined
+                style={{ fontSize: "20px", color: "#64dd17" }}
+              />
+              Chat
+            </a>
+          </div>
+          <div className="fundraiser">
+            <Link to="/new"> Start A Fundraiser</Link>
+          </div>
+          {isAuth ? (
+            <div className="dropdown loginUser">
+            <img src={loggedUser.img}
+              className="dropdown-toggle"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            />
+             <span>{loggedUser.name}</span>
+            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <p className="dropdown-item" onClick={this.handleLogout}>Logout</p>
+              
+            </div>
+          </div>
+          ) : (
+            <div className="signin">
+              <Link to="/login"> Sign In</Link>
+            </div>
+          )}
+        </NavbarRight>
+      </NavbarWrapper>
+    );
+  }
+}
+Navbar.contextType = DataContext;
 export { Navbar };

@@ -106,50 +106,24 @@
       "id": 7
     } 
   ],
-  "category": [
+  "users": [
     {
       "id": 1,
-      "value": "Education"
+      "mobile":  9863783467,
+      "name":"Reema",
+      "img":"https://media-exp1.licdn.com/dms/image/C4D03AQH-TD4bcMj-2A/profile-displayphoto-shrink_100_100/0/1599816750107?e=1614816000&v=beta&t=YNT2CbGrG5QLczbUbE_ZafpZNEBfKHNpFUmRs4A5KeI"
     },
     {
       "id": 2,
-      "value": "Education"
+      "mobile": 1234567890,
+      "name":"Faiz",
+      "img":"https://media-exp1.licdn.com/dms/image/C5603AQHpaQCclGosSw/profile-displayphoto-shrink_200_200/0/1601194072183?e=1614816000&v=beta&t=6Gy0etvkY5gZz_4UrZEOysCRUASUB1TF0nfkq8Fra3U"
     },
     {
       "id": 3,
-      "value": "Education"
-    },
-    {
-      "id": 4,
-      "value": "Education"
-    },
-    {
-      "id": 5,
-      "value": "Education"
-    },
-    {
-      "id": 6,
-      "value": "Education"
-    },
-    {
-      "id": 7,
-      "value": "Education"
-    },
-    {
-      "id": 8,
-      "value": "Education"
-    },
-    {
-      "id": 9,
-      "value": "Education"
-    },
-    {
-      "id": 10,
-      "value": "Education"
-    },
-    {
-      "id": 11,
-      "value": "Education"
-    }
+      "mobile": 9876543210,
+      "name":"Wahed",
+      "img":"https://media-exp1.licdn.com/dms/image/C5603AQEAgqm9GyweTQ/profile-displayphoto-shrink_200_200/0/1588331577707?e=1614816000&v=beta&t=cJ5cYe-rtZuZ1V_oXjvgqKWDWvdDFVVWF9VD9oRvQnE"
+    } 
   ]
 }
