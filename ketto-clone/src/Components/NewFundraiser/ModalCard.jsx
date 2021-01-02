@@ -43,7 +43,7 @@ class ModalCard extends Component {
             raised:"",
             title:"",
             name:"",
-            category_id:"",
+            category_id:0,
             url:"",
             desc:"",
             agree:false
@@ -67,6 +67,7 @@ class ModalCard extends Component {
     }
   render() {
       const {raised,title,name,category_id,url,agree,desc}=this.state
+     
     return (
       <CardWrap>
         <h1>Tell Us about your Fundraiser</h1>
