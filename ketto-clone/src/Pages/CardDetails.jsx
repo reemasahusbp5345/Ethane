@@ -126,7 +126,8 @@ const HelpDesk = styled.div`
   }
   .paymentcard {
     display: flex;
-    margin-left: -5px;
+    margin-left: 12px;
+    width:300px;
   }
   .paymentcard > div {
     border: 1px solid grey;
