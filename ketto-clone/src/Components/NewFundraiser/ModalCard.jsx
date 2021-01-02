@@ -67,6 +67,7 @@ class ModalCard extends Component {
     }
   render() {
       const {raised,title,name,category_id,url,agree,desc}=this.state
+     
     return (
       <CardWrap>
         <h1>Tell Us about your Fundraiser</h1>

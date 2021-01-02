@@ -9,6 +9,7 @@ class DataContextProvider extends Component {
     this.state = {
       db: [],
       category: "all",
+      isAuth:false,
     };
   }
   componentDidMount() {
@@ -59,10 +60,16 @@ class DataContextProvider extends Component {
     })
     .then(res=>this.fetchData());
   };
+  handleLogin=(mobile)=>{
+    this.setState({
+      isAuth:true,
+      mobile:mobile
+    })
+  }
   render() {
-    const { selectedCategory, addFundraise } = this;
-    const { db, category } = this.state;
-    const value = { db, selectedCategory, category, addFundraise };
+    const { selectedCategory, addFundraise,handleLogin } = this;
+    const { db, category,isAuth } = this.state;
+    const value = { db, selectedCategory, category, addFundraise,isAuth,handleLogin };
     return (
       <DataContext.Provider value={value}>
         {this.props.children}
