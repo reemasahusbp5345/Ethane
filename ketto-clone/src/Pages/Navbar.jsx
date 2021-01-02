@@ -139,7 +139,7 @@ const Navbar = () => {
         <div className="fundraiser">
           <Link to="/new"> Start A Fundraiser</Link>
         </div>
-        <div className="signin">Sign In</div>
+        <div className="signin"><Link to="/login"> Sign In</Link></div>
       </NavbarRight>
     </NavbarWrapper>
   );
