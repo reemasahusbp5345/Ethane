@@ -25,15 +25,7 @@ export default function SuccessStories() {
               >
                 <SuccessStoriesBox1 />
               </li>
-              <li className={styles.carousel__slide}>
-                <SuccessStoriesBox2 />
-              </li>
-              <li className={styles.carousel__slide}>
-                <SuccessStoriesBox3 />
-              </li>
-              <li className={styles.carousel__slide}>
-                <SuccessStoriesBox4 />
-              </li>
+               
             </ul>
           </div>
           <button
