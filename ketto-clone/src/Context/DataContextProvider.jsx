@@ -30,6 +30,7 @@ class DataContextProvider extends Component {
       category: val,
     });
   };
+ 
 
   addFundraise = (payload) => {
     // console.log(payload);
@@ -43,17 +44,17 @@ class DataContextProvider extends Component {
         avatar:
           "https://kettocdn.gumlet.io/media/individual/2179000/2179488/image/667cf549c99f56ebdeaf260f85cb4d5fdfd719b4.jpg?dpr=1.0&q=70&w=50",
         banner:
-          "https://kettocdn.gumlet.io/media/campaign/278000/278650/image/5faa9ed39bbaa.jpeg?w=750&dpr=1.0",
+          "https://kettocdn.gumlet.io/media/campaign/209000/209775/image/9dafd47b27dfab682812af17b00093cedea24fac.jpg?w=750&dpr=1.0",
         name: payload.name,
         raised: payload.raised,
         hour: 21,
         support: 157,
         dayLeft: 12,
-        category_id: payload.category_id,
+        category_id: Number(payload.category_id),
         desc:
          payload.desc,
         more:
-          "https://kettocdn.gumlet.io/media/campaign/278000/278650/image/5faa9ef60e107.jpeg?w=750&dpr=1.0",
+          "https://kettocdn.gumlet.io/media/directupload/1000/1052/image/43371009c51a42f4c6220faa248b5e0538feae63.jpg?w=700&dpr=1.0"
       },
     })
     .then(res=>this.fetchData());

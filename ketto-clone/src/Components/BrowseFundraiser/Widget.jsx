@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { SearchOutlined } from "@ant-design/icons";
 import Card from "../Card/Card";
+import { DataContext } from "../../Context/DataContextProvider";
 
 const WidgetWrapper = styled.div`
 margin-top: -690px;
@@ -43,38 +44,47 @@ class Widget extends Component {
     constructor(props){
         super(props);
         this.state={
-            category:"all",
+            category:0,
         }
     }
-  render() {
+    handleChange=(e)=>{
+      this.setState({
+        [e.target.name]:e.target.value
+      })
+      const {selectedCategory}=this.context;
+      selectedCategory(this.state.category)
+    }
+    
+    render() {
     return (
       <WidgetWrapper>
         <form className="form-inline d-flex justify-content-center md-form form-sm">
           <input
             type="text"
             className=" mr-3 w-75"
+             
             placeholder="Search for Fundraisers"
           />
-          <span>
+          <span onClick={this.handleClick}>
             <SearchOutlined style={{ fontSize: "25px", color: "#455a64" }} />
           </span>
         </form>
         <FilterWrap className="filter-area ng-star-inserted">
           <span className="filter-container">
             Showing Fundraisers for 
-            <select value={this.state.category}  >
-              <option value="all" >All Categories</option>
-              <option value="education1">Education</option>
-              <option value="medical">Medical</option>
-              <option value="women">Women & Girls</option>
-              <option value="animal">Animal</option>
-              <option value="creative">Creative</option>
-              <option value="food">Food & Hunger</option>
-              <option value="env">Environment</option>
-              <option value="children">Children</option>
-              <option value="memorial">Memorial</option>
-              <option value="community">Community Development</option>
-              <option value="others">Others</option>
+            <select name="category"  value={this.state.category} onChange={this.handleChange} >
+              <option value="0" >All Categories</option>
+              <option value="1">Education</option>
+              <option value="2">Medical</option>
+              <option value="3">Women & Girls</option>
+              <option value="4">Animal</option>
+              <option value="5">Creative</option>
+              <option value="6">Food & Hunger</option>
+              <option value="7">Environment</option>
+              <option value="8">Children</option>
+              <option value="9">Memorial</option>
+              <option value="10">Community Development</option>
+              <option value="11">Others</option>
             </select>
           </span>
           <span className="filter-container">
@@ -116,5 +126,5 @@ class Widget extends Component {
     );
   }
 }
-
+Widget.contextType=DataContext
 export default Widget;

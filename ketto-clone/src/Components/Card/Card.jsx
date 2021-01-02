@@ -51,7 +51,6 @@ class Card extends Component {
     render() {
         const {db,category}=this.context;
         const {url}=this.props.match 
-        console.log(this.props)
         const filterItem=db.filter(item=>item.category_id===category || category===0 || category==="all")
         return (
             <Wrapper>

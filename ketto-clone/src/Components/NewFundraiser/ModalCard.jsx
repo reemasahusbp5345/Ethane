@@ -43,7 +43,7 @@ class ModalCard extends Component {
             raised:"",
             title:"",
             name:"",
-            category_id:"",
+            category_id:0,
             url:"",
             desc:"",
             agree:false
