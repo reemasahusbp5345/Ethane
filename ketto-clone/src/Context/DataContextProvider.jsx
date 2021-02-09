@@ -21,7 +21,7 @@ class DataContextProvider extends Component {
   userDetails = () => {
     axios({
       method: "get",
-      url: "http://localhost:3008/users",
+      url: "https://ketto-clone.herokuapp.com/users",
     }).then((res) =>
       this.setState({
         users: res.data,
@@ -31,7 +31,7 @@ class DataContextProvider extends Component {
   fetchData = () => {
     axios({
       method: "get",
-      url: "http://localhost:3008/posts",
+      url: "https://ketto-clone.herokuapp.com/posts",
     }).then((res) =>
       this.setState({
         db: res.data,
@@ -48,7 +48,7 @@ class DataContextProvider extends Component {
     // console.log(payload);
     axios({
       method: "post",
-      url: "http://localhost:3008/posts",
+      url: "https://ketto-clone.herokuapp.com/posts",
       data: {
         title: payload.title,
         url: payload.url,

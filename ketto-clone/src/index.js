@@ -1,16 +1,16 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter } from 'react-router-dom';
 import App from './App';
-import {BrowserRouter} from "react-router-dom"
 import DataContextProvider from './Context/DataContextProvider';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
   <DataContextProvider>
     <App />
   </DataContextProvider>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
 
